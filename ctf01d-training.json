@@ -1,0 +1,75 @@
+{
+  "service_name": "2017-service-yet-another-book-collection",
+  "display_name": "Yet Another Book Collection",
+  "ctf_event": "SibirCTF 2017",
+  "year": 2017,
+  "description": "Веб-сервис для ведения коллекции книг с регистрацией и загрузкой обложек.",
+  "author": "Polyakov Igor",
+  "service_port": 9999,
+  "languages": [
+    "Ruby"
+  ],
+  "tech_stack": [
+    "Ruby",
+    "Ruby on Rails",
+    "PostgreSQL",
+    "ImageMagick"
+  ],
+  "dependencies": {
+    "runtime": [
+      "bootstrap-sass",
+      "pg",
+      "puma",
+      "rails",
+      "sass-rails",
+      "simple_form",
+      "uglifier",
+      "bcrypt",
+      "coffee-rails",
+      "jbuilder",
+      "jquery-rails",
+      "paperclip",
+      "turbolinks",
+      "tzinfo-data"
+    ],
+    "development": [
+      "byebug",
+      "ffaker",
+      "listen",
+      "web-console",
+      "spring",
+      "spring-watcher-listen"
+    ],
+    "system": [
+      "postgresql",
+      "imagemagick"
+    ]
+  },
+  "vulnerabilities": [
+    {
+      "type": "Broken Access Control",
+      "description": "Нарушение контроля доступа позволяет получать чужие данные.",
+      "severity": "High"
+    },
+    {
+      "type": "Code Injection",
+      "description": "Внедрение кода через небезопасную обработку пользовательского ввода.",
+      "severity": "High"
+    },
+    {
+      "type": "Mass Assignment",
+      "description": "Массовое присваивание параметров дает возможность менять защищенные поля.",
+      "severity": "Medium"
+    },
+    {
+      "type": "Denial of Service",
+      "description": "Создание большого числа Symbol через to_sym приводит к утечке памяти.",
+      "severity": "Medium"
+    }
+  ],
+  "metadata": {
+    "difficulty": null,
+    "category": null,
+    "tags": []
+  }
+}
