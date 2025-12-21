@@ -4,7 +4,7 @@
   "ctf_event": "SibirCTF 2017",
   "year": 2017,
   "description": "Веб-сервис для ведения коллекции книг с регистрацией и загрузкой обложек.",
-  "author": "Polyakov Igor",
+  "author": "Игорь Поляков",
   "service_port": 9999,
   "languages": [
     "Ruby"
